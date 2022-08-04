@@ -185,9 +185,35 @@ wp_localize_script( 'api-custom-js', 'additionalData', array(
   ) );
 
 
-//Fetch posts wordpress API
-  add_action( 'wp_enqueue_scripts', 'enqueue_api_script' );
+// //Fetch posts wordpress API
+//   add_action( 'wp_enqueue_scripts', 'enqueue_api_script' );
 
-function enqueue_api_script() {
-   wp_enqueue_script( 'api-main-js', get_template_directory_uri() . '/js/api-main.js', NULL, 1.0, true );
-}
+// function enqueue_api_script() {
+//    wp_enqueue_script( 'api-main-js', get_template_directory_uri() . '/js/api-main.js', NULL, 1.0, true );
+// }
+
+// add_action( 'new_enqueue_scripts', 'enqueue_api_script' );
+
+// function new_api_script() {
+//    wp_enqueue_script( 'new-js', get_template_directory_uri() . '/js/new.js', NULL, 1.0, true );
+// }
+
+
+
+
+// Add a Formatted Date to the WordPress REST API JSON Post Object
+
+add_action('rest_api_init', function() {
+    register_rest_field(
+        array('post'),
+        'formatted_date',
+        array(
+            'get_callback'    => function() {
+                return get_the_date();
+            },
+            'update_callback' => null,
+            'schema'          => null,
+        )
+    );
+});
+

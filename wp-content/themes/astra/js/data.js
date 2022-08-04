@@ -4,16 +4,11 @@ var quickAddBtn = document.querySelector('#quick-add-button');
 if( quickAddBtn ) {
     quickAddBtn.addEventListener("click", function(){
         //alert('clicked');
-        var mycategory=document.getElementById('category_list').value;
-        
-         //alert(mycategory);
         var ourPostData = {
-            "title" : document.querySelector('.admin-quick-add [name="title"]').value,
+            "title" : "my",
             "content" : document.querySelector('.admin-quick-add [name="content"]').value,
-            "excerpt" : document.querySelector('.admin-quick-add [name="excerpt"]').value,
-            "categories" : mycategory,
-            "tags" : [1,29],
-            "featured_media" : 1261,
+            "excerpt" : "My Excerpt",
+            "categories" : "Cat",
             "status": "publish"
         }
 

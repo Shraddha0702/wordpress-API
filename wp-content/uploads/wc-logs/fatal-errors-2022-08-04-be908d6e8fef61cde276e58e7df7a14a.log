@@ -1,0 +1,13 @@
+2022-08-04T08:44:44+00:00 CRITICAL Uncaught ValueError: shell_exec(): Argument #1 ($command) cannot be empty in C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php(64): shell_exec('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php on line 64
+
+2022-08-04T08:46:07+00:00 CRITICAL Out of memory (allocated 81788928) (tried to allocate 245760 bytes) in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 2169
+
+2022-08-04T12:41:45+00:00 CRITICAL syntax error, unexpected variable "$api_media_response" in C:\xampp\htdocs\wordpress\wp-content\themes\astra\functions.php on line 209
+

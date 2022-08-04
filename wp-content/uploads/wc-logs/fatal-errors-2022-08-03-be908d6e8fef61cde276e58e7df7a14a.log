@@ -1,0 +1,11 @@
+2022-08-03T13:06:08+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php on line 77
+
+2022-08-03T13:22:14+00:00 CRITICAL Uncaught Error: Attempt to assign property "children" on array in C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php:109
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php(115): _get_child_terms(Object(WP_Error))
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\astra\API_page.php on line 109
+
